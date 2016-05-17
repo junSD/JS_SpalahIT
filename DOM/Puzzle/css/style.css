@@ -1,0 +1,57 @@
+   body {
+    background-image:url(http://goodoboi.ru/images/foto/original/20130714130934342.jpg);
+    }
+    .user {
+    border-top:1px solid #968F44;
+    width:480px;
+    padding:10px;
+    background-color:#967070;
+    float:left;
+    }
+    .wrapper {
+    border:3px solid #968B58;
+    border-radius:5px;
+    width:500px;
+    background-color:#5F9658;
+    }
+    #result{
+    width:250px;
+    overflow:scroll;
+    height:500px;
+    padding:5px;
+    float:left;
+    background-color:#5F9658;
+    }
+    .message {
+    margin:5px 0;
+    padding: 10px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    color: #3c763d;
+    background-color: #dff0d8;
+    }
+    .word {
+    margin:5px 0;
+    padding: 10px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    color: #AE6AD8;
+    background-color: #dff0d8;  
+    }
+    #words {
+    width:230px;
+    overflow:scroll;
+    height:500px;
+    padding:5px;
+    background-color:#BEAD30;
+    float:right;
+    }
+    .clearfix:after {
+    content:'';
+    display:table;
+    clear:both;
+    
+    }
+    #button {
+    margin-left:30px;
+    }

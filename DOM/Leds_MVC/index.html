@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="assets/calculator.css">
+
+		<title>Calculator</title>
+	</head>
+	<body>
+
+		<div id="myCalculator">
+		</div>
+		<script type="text/template" id="myCalculatorTemplate">
+			<main>
+				<section class="inc">
+						<div>
+							<h4>Incandescent</h4>
+							<p>
+							<%= inc_wattage %>
+							</p>
+							<p><%= inc_cost %></p>
+						</div>
+				</section>
+				<section class="hal">
+					<div>
+						<h4>Halogen</h4>
+						<p><%= hal_wattage %></p>
+						<p><%= hal_cost %></p>
+					</div>
+				</section>
+				<section class="cfl">
+					<div>
+						<h4>CFL</h4>
+						<p><%= cfl_wattage %></p>
+						<p><%= cfl_cost %></p>
+					</div>
+				</section>
+				<section class="led">
+					<div>
+						<h4>LED</h4>
+						<p><%= led_wattage %></p>
+						<p><%= led_cost %></p>
+					</div>
+				</section>
+			</main>
+			<form>
+				<div>
+					<h4>Lumens</h4>
+					<p>Brighttness <br> of bulb</p>
+					<select>
+	<%
+	_.each(brighttness, function(item){
+		%>
+		<option <%= current_lumens === item ? 'selected' : '' %> value="<%= item %>">
+			<%= item %>
+		</option>
+		<%
+	});
+	%>
+</select>
+				</div>
+				<div>
+					<h4>kWh</h4>
+					<p>Kilowatt-<br>hour cost</p>
+					<input type="number" value="<%= current_hour_cost %>"> cents
+				</div>
+				<div>
+					<h4>Hours</h4>
+					<p>Usage <br>per day</p>
+					<input type="number" value="<%= current_usage %>">
+				</div>
+			</form>
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+		<script src="assets/underscore-min.js"></script>
+		<script src="assets/model.js"></script>
+		<script src="assets/view.js"></script>
+		<script src="assets/controller.js"></script>
+	</body>
+</html>
