@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-22</title>
+    <style>
+        .img5,
+        .img6 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .table {
+           width: 300px;
+           border-collapse: collapse;
+        }
+        .table tr th,
+        .table tr td {
+            border: 1px solid red;
+            padding: 10px 15px;
+            text-align: center;
+        }
+        caption {
+            caption-side: top;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body onload="goTime(); changeTimer(); getTimetoNight()">
+<!-- 1 -->
+<p><b>1</b></p>
+<input type="text" value="0" id="text1">
+<input type="button" value='Нажми на меня' id='input1' onclick="goUp()">
+<input type="button" value='Стоп' id='input11' onclick="stop()">
+
+<!-- 2 -->
+<p><b>2</b></p>
+<input type="text" value="0" id="text2">
+<input type="button" value='Нажми на меня' id='input2' onclick="goUp2()">
+<input type="button" value='Стоп' id='input21' onclick="stop2()" disabled>
+
+<!-- 3 -->
+<p><b>3</b></p>
+<span class="watch3"></span>
+
+<!-- 4 -->
+<p><b>4</b></p>
+<span class="timer4">10</span><br/>
+<span class="timer4stop"></span><br/>
+<input type="button" value='Нажать' id='input4' onclick="start4()">
+
+<!-- 5 -->
+<p><b>5</b></p>
+<img src="img/img1.png" alt="" class="img5">
+
+<!-- 6 -->
+<p><b>6</b></p>
+<img src="img/img1.png" alt="" class="img6">
+<img src="img/img2.png" alt="" class="img6">
+<img src="img/img3.png" alt="" class="img6"><br/>
+<input type="button" value='Нажать' id='input6' onclick="changeTimer6()">
+<input type="button" value='Остановить' id='input61' onclick="changeTimer6Stop()" disabled>
+
+<!-- 8 -->
+<p><b>8</b></p>
+<table class="table">
+    <caption>Отсчет до полуночи</caption>
+    <tr>
+        <th>Часы</th>
+        <th>Минуты</th>
+        <th>Секунды</th>
+    </tr>
+    <tr>
+        <td id="hour">1</td>
+        <td id="minute">1</td>
+        <td id="sec">1</td>
+    </tr>
+</table>
+
+<script src="main.js"></script>
+</body>
+</html>

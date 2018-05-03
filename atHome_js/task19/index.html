@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-19</title>
+    <style>
+        #div4 {
+            border: 1px solid green;
+            width: 300px;
+            height: 100px;
+            font-size: 14px;
+            padding: 10px;
+        }
+        #img7 {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px;
+        }
+        #text16 {
+            display: block;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<!-- 1 -->
+<p><b>1</b></p>
+<input type="button" value='Нажми на меня' id='input1' onclick="buttonClick1()">
+
+<!-- 2 -->
+<p><b>2</b></p>
+<input type="button" value='Наведи на меня' id='input1' onmouseover="buttonClick1()">
+
+<!-- 3 -->
+<p><b>3</b></p>
+<input type="button" value='Двойной счелчок по мне' id='input1' ondblclick="buttonClick1()">
+
+<!-- 4 -->
+<p><b>4</b></p>
+<div id='div4' onmouseout="buttonClick1()">
+    <p>Наведи на меня мышь, а потом убери!</p>
+</div>
+
+<!-- 5 -->
+<p><b>5</b></p>
+<input type="text" value="Ку-ку" id="text5">
+<input type="button" value="Нажми на меня!" id="input5" onclick="buttonClick5()">
+
+<!-- 6 -->
+<p><b>6</b></p>
+<input type="text" value="Ку-ку" id="text6">
+<input type="button" value="Нажми на меня!" id="input5" onclick="buttonClick6()">
+
+<!-- 7 -->
+<p><b>7</b></p>
+<img src="img/1218.jpg" alt="" id="img7">
+<input type="button" value="Нажми на меня!" id="input5" onclick="buttonClick7()">
+
+<!-- 8 -->
+<p><b>8</b></p>
+<input type="text" value="Нажми" id="text8" onclick="buttonClick8(this)">
+
+<!-- 9 -->
+<p><b>9</b></p>
+<input type="text" value="Нажми" id="text9" onclick="buttonClick9(this)">
+
+<!-- 10 -->
+<p><b>10</b></p>
+<input type="text" value="Нажми" id="text9" onclick="buttonClick10(this)" onblur="buttonClick101(this)">
+
+<!-- 11 -->
+<p><b>11</b></p>
+<input type="submit" value="Нажми на меня" id="text9" onclick="buttonClick11(this)">
+
+<!-- 12 -->
+<p><b>12</b></p>
+<input type="submit" value="Нажми на меня" id="text9" onclick="buttonClick12(this)">
+
+<!-- 13 -->
+<p><b>13</b></p>
+<img src="img/1218.jpg" alt="" id="img7" onmouseover="buttonClick13(this)" onmouseout="buttonClick131(this)">
+
+<!-- 14 -->
+<p><b>14</b></p>
+<input type="text" value="Ку-ку" id="text14">
+<input type="button" value="Нажми на меня!" id="input14" onclick="buttonClick14()">
+
+<!-- 15 -->
+<p><b>15</b></p>
+<input type="text" value="Ку-ку" id="text15">
+<input type="button" value="Нажми на меня!" id="input15" onclick="buttonClick15()">
+<input type="button" value="После на меня!" id="input151" onclick="buttonClick151()">
+
+<!-- 16 -->
+<p><b>16</b></p>
+<input type="text" value="Ку-ку" id="text16">
+<input type="button" value="Нажми на меня!" id="input16" onclick="buttonClick16()">
+
+<!-- 17 -->
+<p><b>17</b></p>
+<input type="submit" value="Можно нажать!" id="input17" onclick="buttonClick17(this)" style="display: block; margin-bottom: 10px;">
+<input type="submit" value="Нажми чтобы разблакировать элемент выше" id="input171" onclick="buttonClick171(this)" style="display: none;">
+
+<!-- 18 -->
+<p><b>18</b></p>
+<input type="submit" value='0' id="input17" onclick="buttonClick18(this)"" style="width: 200px;">
+
+<!-- 19 -->
+<p><b>19</b></p>
+<input type="text" value="Ку-ку" id="text19">
+<input type="button" value="Нажми на меня!" id="input19" onclick="buttonClick19()">
+
+<!-- 20 -->
+<p><b>20</b></p>
+<input type="text" value="Ку-ку" id="text20" style="width: 250px">
+<input type="button" value="Нажми на меня!" id="input20" onclick="buttonClick20()">
+
+<!-- 21 -->
+<p><b>21</b></p>
+<input type="text" value="Привет!" id="text21" style="width: 150px">
+<input type="text" value="Пока!" id="text211" style="width: 150px">
+<input type="button" value="Нажми на меня!" id="input21" onclick="buttonClick21()">
+
+<!-- 22 -->
+<p><b>22</b></p>
+<input type="text" id="text22" style="width: 150px">
+<input type="text" id="text221" style="width: 150px" disabled>
+<input type="button" value="Нажми на меня!" id="input22" onclick="buttonClick22()">
+
+<!-- 23 -->
+<p><b>23</b></p>
+<input type="text" id="text23" style="width: 150px">
+<input type="text" id="text231" style="width: 150px" disabled>
+<input type="button" value="Нажми на меня!" id="input23" onclick="buttonClick23()">
+
+<!-- 24 -->
+<p><b>24</b></p>
+<input type="button" value="Нажми на меня!" id="input24" onclick="buttonClick24()">
+
+<!-- 25 -->
+<p><b>25</b></p>
+<input type="text" id="text25" style="width: 200px;margin-bottom: 20px;">
+<input type="button" value="Дабавим +" id="input251" onclick="buttonClick25(this)">
+<input type="button" value="Дабавим -" id="input252" onclick="buttonClick25(this)">
+<input type="button" value="Дабавим *" id="input253" onclick="buttonClick25(this)">
+<input type="button" value="Дабавим /" id="input254" onclick="buttonClick25(this)">
+
+<script src="main.js"></script>
+</body>
+</html>

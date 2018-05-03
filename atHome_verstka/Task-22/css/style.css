@@ -1,0 +1,366 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: rgb(250,235,215);
+}
+.wrapper__task {
+    width: 60%;
+    max-width: 1000px;
+    min-width: 600px;
+    margin: 20px auto;
+}
+.wrapper__header {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba(105,105,105, .7);
+    margin-bottom: 15px;
+}
+.block__task {
+    width: 100%;
+    border: 2px dotted #000;
+    padding: 30px;
+    background-color: rgba(169,169,169,.7);
+    margin-bottom: 30px;
+}
+.block__par{
+    text-align: left;
+    font-size: 1.5rem;
+    color: rgb(139,69,19);
+    margin-bottom: 10px;
+}
+.block__point {
+    width: 80%;
+    margin: 0 auto;
+}
+.block__point__header {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+/*1*/
+
+.block__point__par1 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par1:first-letter {
+    font-size: 1.6rem;
+    color: red;
+}
+
+/*2*/
+
+.block__point__par2 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par2:first-line {
+    color: red;
+}
+
+/*3*/
+
+.block__point__par3 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par3::selection {
+    color: #fff;
+    background-color: green;
+}
+
+/*4*/
+
+#block_inp-point41::placeholder {
+    color: green;
+}
+
+#block_inp-point42::placeholder {
+    color: #fff;
+    background-color: green;
+}
+
+/*5*/
+
+.block__div-5 {
+    margin-bottom: 10px;
+}
+.block__div-5:last-child {
+    margin-bottom: 0;
+}
+.block__div__inp51 {
+    width: 150px;
+}
+.block__div__inp51:focus {
+    letter-spacing: 2px;
+    color: green;
+    font-weight: bold;
+    padding: 3px;
+}
+.block__div__inp52 {
+    width: 150px;
+    outline: none;
+}
+.block__div__inp52:focus {
+    padding: 3px;
+    box-shadow: 0 0 10px rgb(255,127,80);
+    color: rgb(255,127,80);
+}
+.block__div__inp53 {
+    width: 150px;
+    outline: none;
+}
+.block__div__inp53:focus {
+    width: 250px;
+    box-shadow: 1px 1px 5px #000,
+                -1px -1px 5px #000;
+}
+
+/*6*/
+
+.block__point__par6 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par6::after {
+    content: " :конец!";
+}
+.block__point__par6::before {
+    content: "Начало: ";
+}
+
+/*7*/
+
+.block__point__par7 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par7::after {
+    content: " :конец!";
+    color: red;
+}
+.block__point__par7::before {
+    content: "Начало: ";
+    color: green;
+}
+
+/*8*/
+
+.block__point8 {
+    width: 80%;
+    margin: 0 auto;
+    counter-reset: count;
+}
+.block__point__par8 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par8::before {
+    counter-increment: count 1;
+    content: "Абзац №" counter(count)". "
+}
+
+/*9*/
+
+.block__point9 {
+    width: 80%;
+    margin: 0 auto;
+    counter-reset: count 7;
+}
+.block__point__par9 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par9::before {
+    counter-increment: count 1;
+    content: "Абзац №" counter(count)". "
+}
+
+/*10*/
+
+.block__point10 {
+    width: 80%;
+    margin: 0 auto;
+    counter-reset: count;
+}
+.block__point__par10 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par10::before {
+    counter-increment: count 1;
+    content: "Абзац №" counter(count)". "
+}
+.block__point__reset10 {
+    counter-reset: count;
+    font-weight: bold;
+}
+
+/*11*/
+
+.block__point11 {
+    width: 80%;
+    margin: 0 auto;
+    counter-reset: count;
+}
+.block__point__par11 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.block__point__par11::before {
+    counter-increment: count 1;
+    content: "Абзац №" counter(count)". "
+}
+.block__point__reset11 {
+    counter-reset: count 17;
+    font-weight: bold;
+}
+
+/*12*/
+
+.block__li12:first-child {
+    color: red;
+}
+.block__li12:last-child {
+    color: green;
+}
+
+/*13*/
+
+.block__li13:nth-child(3){
+    color: red;
+}
+
+/*14*/
+
+.block__li14:nth-child(odd) {
+    color: red;
+}
+.block__li14:nth-child(even) {
+    color: green;
+}
+
+/*15*/
+
+.block__li15:nth-child(3n) {
+    color: red;
+}
+
+/*16*/
+
+.block__li16:nth-last-child(2) {
+    color: red;
+}
+
+/*17*/
+
+.block__ul171 {
+    margin-bottom: 10px;
+}
+li:only-of-type {
+    color: red;
+}
+
+/*18*/
+
+.block__point__label18 {
+    margin-bottom: 10px;
+}
+.block__point__input18:checked + .block__point__label18{
+     color: red;
+}
+
+/*19*/
+
+.block__point__inp191,
+.block__point__inp192{
+    outline: none;
+    width: 150px;
+}
+.block__point__inp191:enabled {
+    box-shadow: 0 0 4px green;
+    border: 1px solid green;
+}
+.block__point__inp191:disabled {
+    box-shadow: 0 0 4px red;
+    border: 1px solid red;
+}
+
+/*20*/
+
+.block__point__li19 {
+    width: 70px;
+    padding: 3px;
+    margin-bottom: 7px;
+    border:1px solid red;
+}
+.block__point__li19:empty {
+    border:1px solid blue;
+}
+
+/*21*/
+
+.block__point__p21:not(.block__point__p21-test) {
+    color: red;
+}
+
+/*22*/
+
+.block__point__li22:not(:first-child) {
+    color: red;
+}
+
+/*23*/
+
+.block__point__li23:not(:nth-child(3)) {
+    color: red;
+}
+
+/*24*/
+.block__point__par24 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+.block__point__q24:lang(fr) {
+    quotes: "\00AB" "\00BB";
+}
+.block__point__q24:lang(de) {
+    quotes: "\201E" "\201C";
+}
+.block__point__q24:lang(en) {
+    quotes: "\201C" "\201D";
+}
+
+/*25*/
+
+.block__point__test25 {
+    margin-right: 20px;
+}
+.block__point__par25test {
+    margin-top: 10px;
+}
+.block__point__par25go {
+    margin-top: 10px;
+}
+.block__point__par25test:target {
+    background-color: rgb(255,160,122);
+    color: #fff;
+    padding: 3px;
+}
+.block__point__par25go:target {
+    background-color: rgb(255,140,0);
+    color: #fff;
+    padding: 3px;
+}

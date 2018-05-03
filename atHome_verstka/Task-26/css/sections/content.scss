@@ -1,0 +1,275 @@
+.main {
+    padding: 20px 10px;
+    background-color: rgb(238,232,170);
+}
+.main__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.section {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(245,245,220);
+    padding: 0 20px 20px 20px;
+}
+.section__list {
+    counter-reset: list;
+}
+.section__item {
+    margin-bottom: 10px;
+    &:before {
+        font-weight: bold;
+        counter-increment: list;
+        content: counter(list) ". ";
+    }
+}
+.section__desc {
+    display: inline-block;
+    text-align: left;
+    padding: 5px 0;
+}
+.section__content {
+    overflow-x: hidden;
+    width: 100%;
+    border: 2px dotted #ccc;
+    padding: 15px;
+}
+
+// ================task__1=================
+
+@include keyframes(anim1) {
+  0%  { margin-left: 10px; }
+ 100% { margin-left: 600px;; }
+}
+
+.section__block1 {
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    background: white;
+    // transition-property: background;
+    // transition-duration: 2s;
+    // transition-timing-function: ease;
+    // transition-delay: 0;
+    @include animation("anim1 4s ease-in 4");
+}
+
+// ================task__2=================
+
+.section__block2 {
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    background: white;
+    @include animation("anim1 4s ease-out infinite");
+}
+
+// ================task__3=================
+@include keyframes(anim2) {
+  0%  { background-color: rgba(255, 255 , 255, 1);}
+  50% { background-color: rgba(255, 0 , 0, 0.5);}
+ 100% { background-color: rgba(255, 0 , 0, 1); }
+}
+.section__block3 {
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    @include animation("anim2 6s linear 4");
+}
+
+// ================task__4=================
+@include keyframes(anim3) {
+  0%  { top: 15px; left:15px;}
+  25%  { top: 15px; left:315px;}
+  50% { top: 315px; left:315px;}
+  75% { top: 315px; left:15px;}
+ 100% { top: 15px; left:15px;}
+}
+.section__content-rel {
+    min-height: 400px;
+    position: relative;
+}
+.section__block4 {
+    width: 60px;
+    height: 60px;
+    border: 1px solid red;
+    background: white;
+    position: absolute;
+    @include animation("anim3 8s linear 2");
+}
+
+// ================task__5=================
+@include keyframes(anim4) {
+  0%  { background-color: rgba(255, 255 , 255, 1);}
+  25%  { background-color: rgba(255, 0 , 0, 1);}
+  50% { background-color: rgba(0, 255 , 0, 1);}
+  75% { background-color: rgba(0, 0 , 255, 1);}
+ 100% { background-color: rgba(255, 255 , 255, 1);}
+}
+.section__block5 {
+    width: 60px;
+    height: 60px;
+    border: 1px solid red;
+    position: absolute;
+    background: white;
+    @include animation("anim3 8s linear 2", "anim4 2s linear 8");
+}
+
+// ================task__6=================
+@include keyframes(anim5) {
+  0%  { margin-left: 10px;}
+  50% { margin-left: 500px;}
+ 100% { margin-left: 10px;}
+}
+.section__block6 {
+    width: 60px;
+    height: 60px;
+    border: 1px solid red;
+    background: white;
+    @include animation("anim5 6s linear 6");
+}
+
+// ================task__7=================
+
+@include keyframes(anim6) {
+  0%  { margin-left: 10px;}
+ 100% { margin-left: 500px;}
+}
+.section__block7 {
+    width: 60px;
+    height: 60px;
+    border: 1px solid red;
+    background: white;
+    @include animation("anim6 4s ease 6 alternate");
+}
+
+// ================task__8=================
+
+@include keyframes(anim7) {
+  0%  { width: 10px;}
+ 100% { width: 100%;}
+}
+.section__block8 {
+    width: 300px;
+    height: 40px;
+    border: 1px solid red;
+    background: white;
+}
+.section__block8-fill {
+   height: 100%;
+   width: 0;
+   background-color: red;
+   @include animation("anim7 10s ease");
+}
+
+// ================task__9=================
+
+.section__block9 {
+    width: 300px;
+    height: 40px;
+    border: 1px solid red;
+    background: white;
+}
+.section__block9-fill {
+   height: 100%;
+   width: 0;
+   background-color: red;
+   @include animation("anim7 10s linear infinite");
+}
+
+// ================task__10=================
+
+@include keyframes(anim8) {
+  0%  { width: 60px;}
+ 100% { width: 80%;}
+}
+.section__block10 {
+    width: 60px;
+    height: 50px;
+    border: 1px solid red;
+    background: white;
+    @include animation("anim8 5s linear infinite alternate");
+    animation-play-state: paused;
+    &:hover {
+        cursor: pointer;
+        animation-play-state: running;
+    }
+}
+
+// ================task__11=================
+
+@include keyframes(anim9) {
+  0%  { width: 60px;}
+ 100% { width: 90%;}
+}
+.section__block11 {
+    width: 200px;
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    border: 1px solid red;
+    background: white;
+    &:hover {
+        cursor: pointer;
+    }
+    &:hover + .section__block11-move {
+        animation-play-state: running;
+    }
+}
+.section__block11-move {
+    width: 60px;
+    height: 50px;
+    border: 1px solid blue;
+    @include animation("anim9 5s linear infinite alternate");
+    animation-play-state: paused;
+}
+
+// ================task__12=================
+
+@include keyframes(anim10) {
+  0%  { top: 0; left: 0;
+    animation-timing-function: easy-in;}
+  30%  { top: 278px; left: 15%;
+    animation-timing-function: easy-out;}
+  50%  { top: 208px; left: 30%;
+    animation-timing-function: easy-in;}
+  70%  { top: 278px; left: 50%;
+    animation-timing-function: easy-out;}
+  90%  { top: 228px; left: 70%;
+    animation-timing-function: easy-in;}
+  100% {top: 278px; left: 85%;}
+}
+.section__content-height {
+    height: 400px;
+}
+.section__block12 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 5px auto;
+    border: 1px solid red;
+    background: white;
+    &:hover {
+        cursor: pointer;
+        .section__block12-boll {
+        animation-play-state: running;
+        background-color: black;
+        }
+    }
+}
+.section__block12-boll {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 0;
+    @include animation("anim10 10s infinite");
+    animation-play-state: paused;
+}

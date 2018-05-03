@@ -1,0 +1,467 @@
+.main {
+    // text-align: center;
+    padding: 20px 10px;
+    background-color: rgb(238,232,170);
+}
+.main__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.section {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(245,245,220);
+    padding: 0 20px 20px 20px;
+}
+.section__list {
+    counter-reset: list;
+}
+.section__item {
+    margin-bottom: 10px;
+    &:before {
+        font-weight: bold;
+        counter-increment: list;
+        content: counter(list) ". ";
+    }
+}
+.section__desc {
+    display: inline-block;
+    text-align: left;
+    padding: 5px 0;
+}
+.section__content {
+    overflow-x: hidden;
+    width: 100%;
+    border: 2px dotted #ccc;
+    padding: 15px;
+}
+
+// ================task__1=================
+
+.section__block1 {
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    background: white;
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+    &:hover {
+        background: red;
+        cursor: pointer;
+    }
+}
+
+// ================task__2=================
+
+.section__block2 {
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    background: white;
+    font-size: 14px;
+    padding: 5px;
+    color: red;
+    transition: all 2s;
+    &:hover {
+        background: red;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+// ================task__3=================
+
+.section__block3 {
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    background: white;
+    font-size: 14px;
+    padding: 5px;
+    color: red;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+    &:hover {
+        width: 100%;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+// ================task__4=================
+
+.section__block4 {
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    background: white;
+    font-size: 14px;
+    padding: 5px;
+    color: red;
+    transition: width 3s ease, font-size 3s ease;
+    &:hover {
+        width: 100%;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+
+// ================task__5=================
+
+.section__block5 {
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    background: white;
+    font-size: 14px;
+    padding: 5px;
+    color: red;
+    transition: all 3s;
+    &:hover {
+        width: 50%;
+        margin-left: 25%;
+        cursor: pointer;
+    }
+}
+
+// ================task__6=================
+
+.section__block6 {
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid red;
+    background: white;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    text-indent: 2000px;
+    white-space: nowrap;
+    transition: text-indent 1.5s ease-out;
+    &:hover {
+        cursor: pointer;
+        text-indent: 0px;
+    }
+}
+
+// ================task__7=================
+
+.section__block7 {
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid red;
+    background: white;
+    font-size: 14px;
+    color: red;
+    transition: width 2s linear 3s;
+    &:hover {
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+// ================task__8=================
+
+.input-f8 {
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    width: 300px;
+    font-size: 16px;
+    transition: all 2s ease;
+    &:focus {
+        outline: none;
+        width: 60%;
+        box-shadow: 0 0 2px green;
+    }
+}
+
+// ================task__9=================
+
+.section__block9 {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid green;
+    .block-9 {
+        width: 30%;
+        height: 40px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+        transition: all 2s;
+    }
+    &:hover {
+        cursor: pointer;
+        .block-9 {
+            width: 100%;
+        }
+    }
+}
+
+// ================task__10=================
+
+.section__block10 {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid green;
+    .block-10 {
+        width: 30%;
+        height: 40px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+        transition: all 2s;
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover + div{
+            width: 100%;
+        }
+    }
+}
+
+// ================task__11=================
+
+.section__block11 {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid green;
+    .block-11 {
+        width: 30%;
+        height: 40px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+        transition: all 2s;
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover ~ div{
+            width: 100%;
+        }
+    }
+}
+
+// ================task__12=================
+
+.section__block12 {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid green;
+    .block-12 {
+        width: 30%;
+        height: 40px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+        transition: all 2s;
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover + div + div{
+            width: 100%;
+        }
+    }
+}
+
+// ================task__13=================
+
+.section__block13 {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid red;
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 30px;
+    transition: all 2s;
+    &:hover {
+        cursor: pointer;
+    }
+    &:hover + .block13 {
+            margin-left: 25%;
+        }
+    }
+.block13 {
+    width: 50%;
+    border: 1px solid red;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    background-color: red;
+    transition: all 2s;
+    margin-left: -100%;
+}
+
+// ================task__14=================
+
+.section__block14 {
+    width: 30%;
+    height: 40px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+    transition: width 4s steps(5, start);
+    &:hover {
+        cursor: pointer;
+        width: 100%;
+    }
+    &:hover + .block14 {
+            width: 100%;
+        }
+    }
+.block14 {
+    width: 30%;
+    height: 40px;
+    border: 1px solid red;
+    transition: width 4s steps(5, end);
+}
+
+// ================task__15=================
+
+.section__block15 {
+    width: 30%;
+    height: 40px;
+    border: 1px solid red;
+    transition: width 4s cubic-bezier(.58,-0.89,.2,.43);
+    &:hover {
+        width: 80%;
+    }
+}
+
+// ================task__16=================
+
+.section__block16 {
+    width: 50%;
+    margin-left: 25%;
+    height: 50px;
+    border: 1px solid red;
+    .block16 {
+        width: 0%;
+        height: 100%;
+        background-color: red;
+        transition: width 3s ease-in;
+    }
+    &:hover {
+        cursor: pointer;
+        .block16 {
+            width: 100%;
+        }
+    }
+}
+
+// ================task__17=================
+
+.section__block17 {
+    width: 50%;
+    margin-left: 25%;
+    height: 50px;
+    border: 1px solid red;
+    .block17 {
+        width: 0%;
+        height: 100%;
+        background-color: red;
+        transition: width 4s steps(10, start);
+    }
+    &:hover {
+        cursor: pointer;
+        .block17 {
+            width: 100%;
+        }
+    }
+}
+
+// ================task__18=================
+
+.section__block18 {
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px dotted green;
+}
+.block18-red {
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-color: red;
+    border: 1px solid red;
+    &:hover {
+        cursor: pointer;
+    }
+    &:hover + .block18-black1 {
+            top: 85%;
+    }
+    &:hover ~ .block18-black2 {
+            left: 70%;
+        }
+}
+.block18-black1 {
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    border: 1px solid #000;
+    transition: all 2s ease-out;
+}
+.block18-black2 {
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    border: 1px solid #000;
+    transition: all 2s ease-out;
+}
+
+// ================task__19=================
+
+.section__block19-wrap {
+    height: 150px;
+}
+.section__list19 {
+    width: 100px;
+}
+.dropdown__list {
+    width: 100px;
+    display: none;
+    position: absolute;
+}
+.dropdown__item {
+    margin-bottom: 3px;
+}
+.dropdown__link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+}
+.section__item19 {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(112,128,144);
+       .dropdown__list {
+        margin-top: -30px;
+        left: 100%;
+        display: block;
+       }
+    }
+}
+.section__link19 {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+}

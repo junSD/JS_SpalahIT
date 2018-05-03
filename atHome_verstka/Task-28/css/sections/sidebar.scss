@@ -1,0 +1,64 @@
+
+
+// ============SIDEBAR================
+
+.sidebar {
+        display: block;
+}
+.nav {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.nav__list {
+    // @extend %clearfix;
+    // font-size: 0;
+    // > * {
+    //     font-size: 16px;
+    // }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.nav__item {
+    width: 32%;
+    border: 1px solid #ccc;
+    // float: left;
+    // display: inline-block;
+    // vertical-align: top;
+    margin-right: 1.333333%;
+    margin-bottom: 10px;
+    background: rgb(255,222,173);
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    @include laptop {
+        width: 49%;
+        margin-right: 2%;
+        &:nth-child(3n) {
+        margin-right: 2%;
+    }
+        &:nth-child(2n) {
+        margin-right: 0;
+    }
+    }
+    @include mobile {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.nav__link {
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    color: rgb(47,79,79);
+    background: rgb(255,222,173);
+    &:link,
+    &:visited {
+        color: rgb(47,79,79);
+    }
+    &:hover {
+        text-decoration: underline;
+        color: rgb(210,105,30);
+    }
+}

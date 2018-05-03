@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-27</title>
+    <style>
+    #elem1 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+    #elem21,
+    #elem31 {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        border: 1px dotted black;
+    }
+    .elem2,
+    .elem3 {
+        width: 50px;
+        height: 50px;
+        border: 1px solid green;
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+    </style>
+</head>
+<body>
+<!-- 1 -->
+<p><b>Задача 1</b></p>
+<div id="elem1"></div>
+
+<!-- 2 -->
+<p><b>Задача 2</b></p>
+<div id="elem21">
+    Нажми где угодно
+    <div class="elem2"></div>
+</div>
+
+<!-- 3 -->
+<p><b>Задача 3</b></p>
+<div id="elem31">
+    Нажми где угодно
+    <div class="elem3"></div>
+</div>
+
+<!-- 4 -->
+<p><b>Задача 4</b></p>
+<input type="text" id="text4" name="text4">
+<span>Код клавиши: </span> <span id="keycode">?</span>
+
+<!-- 5 -->
+<p><b>Задача 5</b></p>
+<input type="text" id="text5" name="text5">
+<span>Код клавиши: </span> <span id="keycode2">?</span>
+
+<!-- 6 -->
+<p><b>Задача 6</b></p>
+<div class="elem6">Текст</div>
+
+<!-- 7 -->
+<p><b>Задача 7</b></p>
+<div class="elem7">Текст</div>
+
+<!-- 8 -->
+<p><b>Задача 8</b></p>
+<input type="text" id="text8" name="text8">
+<p class="text81"></p>
+
+
+<script src="main.js"></script>
+</body>
+</html>

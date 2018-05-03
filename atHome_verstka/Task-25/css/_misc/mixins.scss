@@ -1,0 +1,58 @@
+@mixin box-shadow($params) {
+    -webkit-box-shadow: $params;
+    -moz-box-shadow: $params;
+    box-shadow: $params;
+}
+
+%clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin inlineblock ($valign: top) {
+    display: inline-block;
+    vertical-align: $valign;
+}
+
+@mixin block($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+//responsive
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}
+
+@mixin desktop {
+    @media screen and (min-width: 800px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (min-width: 480px) and (max-width: 800px){
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}

@@ -1,0 +1,22 @@
+.footer__desc {
+    height: 155px;
+    background: url(../img/footer-bg.png) repeat-x left top;
+}
+.footer__desc-text {
+    margin: 0px;
+    padding: 30px 0px 0px 0px;
+    text-shadow: 1px 1px 2px rgba(39, 20, 17, 1);
+    text-align: center;
+    color: #784F45;
+    .footer__desc-link {
+        text-decoration: underline;
+        color: inherit;
+        &:link,
+        &:visited {
+            color: inherit;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

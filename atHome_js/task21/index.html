@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-21</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<!-- 1 -->
+<p><b>1</b></p>
+<p class="zz1">Текущая дата: </p>
+<input type="button" value='Нажми на меня' id='input1' onclick="currentDate()">
+
+<!-- 2 -->
+<p><b>2</b></p>
+<p class="zz2">Текущий месяц: </p>
+<input type="button" value='Нажми на меня' id='input2' onclick="currentMonth()">
+
+<!-- 3 -->
+<p><b>3</b></p>
+<p class="zz3">Текущий год: </p>
+<input type="button" value='Нажми на меня' id='input3' onclick="currentYear()">
+
+<!-- 4 -->
+<p><b>4</b></p>
+<p class="zz4">Текущее время: </p>
+<input type="button" value='Нажми на меня' id='input4' onclick="getCurrentTime()">
+
+
+<!-- 5 -->
+<p><b>5</b></p>
+<p class="zz5">Текущей день: </p>
+<input type="button" value='Нажми на меня' id='input5' onclick="getCurrentDay()">
+
+<!-- 6 -->
+<p><b>6</b></p>
+<p class="zz6">Текущей день: </p>
+<input type="button" value='Нажми на меня' id='input6' onclick="getCurrentDayRus()">
+
+<!-- 7 -->
+<p><b>7</b></p>
+<p class="zz7">День 01.07.2015 г.: </p>
+<input type="button" value='Нажми на меня' id='input7' onclick="getDayFromTo()">
+
+<!-- 8 -->
+<p><b>8</b></p>
+<p class="zz8">Количество минут с 1-го января 1970 года до настоящего момента времени:  </p>
+<input type="button" value='Нажми на меня' id='input8' onclick="getMinFromTo()">
+
+<!-- 9 -->
+<p><b>9</b></p>
+<p class="zz9">Количество часов,
+прошедшее между 1 марта 1988 года и текущим моментом:  </p>
+<input type="button" value='Нажми на меня' id='input9' onclick="getMinFromTo2()">
+
+<!-- 10 -->
+<p><b>10</b></p>
+<p class="zz10">Количество секунд с начала дня до настоящего момента времени:  </p>
+<input type="button" value='Нажми на меня' id='input10' onclick="getMinFromTo3()">
+
+<!-- 11 -->
+<p><b>11</b></p>
+<p class="zz11">Количество часов, которое осталось до конца дня:  </p>
+<input type="button" value='Нажми на меня' id='input11' onclick="getSecDay()">
+
+<!-- 12 -->
+<p><b>12</b></p>
+<p class="zz12">Введите дату своего рождения:  </p>
+<input type="text" placeholder="Дата рождения: 2014-12-31" id='dateborn' onblur="getAmountOfDays(this)">
+<span class="days"></span>
+
+<script src="main.js"></script>
+</body>
+</html>

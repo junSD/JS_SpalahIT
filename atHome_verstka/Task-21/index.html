@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task-21</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper__task">
+        <h1 class="wrapper__header">Task 21</h1>
+        <p class="block__par">Контекстный селектор</p>
+        <div class="block__task">
+            <h1 class="block__header">1. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p </span><span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">2. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> внутри дивов <span class="block__span">div</span>. <p></h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">div p </span><span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">3. Сделайте селектор, который выберет все <span class="block__span">h2</span> внутри дивов <span class="block__span">div</span>. <p></h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">div h2 </span><span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">Группировка селекторов</p>
+        <div class="block__task">
+            <h1 class="block__header">4. Сделайте селектор, который выберет абзацы <span class="block__span">p</span> и <span class="block__span">h2</span> одновременно.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p, h2 </span><span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">5. Сделайте селектор, который выберет все <span class="block__span">h2</span> внутри дивов <span class="block__span">div</span> и одновременно все абзацы <span class="block__span">p</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">div h2, p </span><span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">6. Сделайте селектор, который выберет все <span class="block__span">h2</span> внутри дивов <span class="block__span">div</span> и одновременно все абзацы <span class="block__span">p</span> внутри дивов <span class="block__span">div</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">div h2, div p </span><span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">На id</p>
+        <div class="block__task">
+            <h1 class="block__header">7. Сделайте селектор, который выберет все элементы из <span class="block__span">id = test</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">#</span><span class="block__id">test </span><span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">8. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> из <span class="block__span">id = test</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">#</span><span class="block__id">test p </span><span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">9. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> из <span class="block__span">id = test</span> и одновременно все <span class="block__span">h2</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">#</span><span class="block__id">test</span>&nbsp;<span class="block__teg">p</span>,&nbsp;<span class="block__teg">h2</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">На классы</p>
+        <div class="block__task">
+            <h1 class="block__header">10. Сделайте селектор, который выберет все элементы с классом <span class="block__span">test</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">.</span><span class="block__class">test</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">11. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с классом <span class="block__span">test</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">.</span><span class="block__class">test</span>&nbsp;<span class="block__teg">p</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">12. Сделайте селектор, который выберет все элементы с классом <span class="block__span">test</span> и одновременно все элементы с классом <span class="block__span">hello</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">.</span><span class="block__class">test</span>,&nbsp;<span class="block__bracket">.</span></span><span class="block__class">hello</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">13. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с классом <span class="block__span">test</span> и одновременно все <span class="block__span">h2</span> с классом <span class="block__span">hello</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span><span class="block__bracket">.</span><span class="block__class">test</span>,&nbsp;<span class="block__teg">h2</span><span class="block__bracket">.</span></span><span class="block__class">hello</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">14. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с классом <span class="block__span">test</span> и одновременно все элементы с классом <span class="block__span">hello</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span><span class="block__bracket">.</span><span class="block__class">test</span>,&nbsp;<span class="block__bracket">.</span></span><span class="block__class">hello</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">На id и классы вместе</p>
+        <div class="block__task">
+            <h1 class="block__header">15. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с классом <span class="block__span">test</span> из дива <span class="block__span">div</span> с <span class="block__span">id = hello</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">div</span><span class="block__id">#</span><span class="block__id">hello</span>&nbsp;<span class="block__teg">p</span><span class="block__bracket">.</span><span class="block__class">test</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">16. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с классом <span class="block__span">test</span> из элементов с классом <span class="block__span">hello</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">.</span><span class="block__class">hello</span>&nbsp;<span class="block__teg">p</span><span class="block__bracket">.</span><span class="block__class">test</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">17. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с классом <span class="block__span">test</span> из дивов <span class="block__span">div</span> с классом <span class="block__span">hello</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">div</span><span class="block__bracket">.</span><span class="block__class">hello</span>&nbsp;<span class="block__teg">p</span><span class="block__bracket">.</span><span class="block__class">test</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">18. Сделайте селектор, который выберет все <span class="block__span">h2</span> из класса <span class="block__span">test</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">.</span><span class="block__class">test</span>&nbsp;<span class="block__teg">h2</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">На мультиклассы</p>
+        <div class="block__task">
+            <h1 class="block__header">19. Сделайте селектор, который выберет все элементы, которые имеют одновременно 2 класса: <span class="block__span">test</span> и <span class="block__span">hello</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">.</span><span class="block__class">test</span><span class="block__bracket">.</span><span class="block__class">hello</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">20. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span>, которые имеют одновременно 2 класса: <span class="block__span">test</span> и <span class="block__span">hello</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span><span class="block__bracket">.</span><span class="block__class">test</span><span class="block__bracket">.</span><span class="block__class">hello</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">21. Сделайте селектор, который выберет все <span class="block__span">h2</span>, которые имеют одновременно 3 класса: <span class="block__span">test</span>, <span class="block__span">hello</span> и <span class="block__span">eee</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">h2</span><span class="block__bracket">.</span><span class="block__class">test</span><span class="block__bracket">.</span><span class="block__class">hello</span><span class="block__bracket">.</span><span class="block__class">eee</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">Дочерний селектор <span class="block__span">></span></p>
+        <div class="block__task">
+            <h1 class="block__header">22. Сделайте селектор, который выберет все <span class="block__span">i</span>, которые лежат непосредственно внутри <span class="block__span">p</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span>&nbsp;<span class="block__bracket">></span>&nbsp;<span class="block__teg">i</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">23. Сделайте селектор, который выберет все <span class="block__span">li</span>, которые лежат непосредственно внутри <span class="block__span">ul</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">ul</span>&nbsp;<span class="block__bracket">></span>&nbsp;<span class="block__teg">li</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">24. Сделайте селектор, который выберет все <span class="block__span">a</span>, которые лежат непосредственно внутри <span class="block__span">p</span> и одновременно все <span class="block__span">a</span> с классом <span class="block__span">test</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span>&nbsp;<span class="block__bracket">></span>&nbsp;<span class="block__teg">a</span>,&nbsp;<span class="block__teg">a</span><span class="block__bracket">.</span><span class="block__class">test</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">Соседний селектор <span class="block__span">+</span></p>
+        <div class="block__task">
+            <h1 class="block__header">25. Сделайте селектор, который выберет все <span class="block__span">i</span>, которые лежат непосредственно после <span class="block__span">b</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">b</span>&nbsp;<span class="block__bracket">+</span>&nbsp;<span class="block__teg">i</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">26. Сделайте селектор, который выберет все <span class="block__span">i</span>, которые лежат непосредственно после <span class="block__span">b</span> из элемента с <span class="block__span">id = test</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">#</span><span class="block__id">test</span>&nbsp;<span class="block__teg">b</span>&nbsp;<span class="block__bracket">+</span>&nbsp;<span class="block__teg">i</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">27. Сделайте каждый абзац, следующий сразу после элемента <span class="block__span">ul</span>, красного цвета.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">ul</span>&nbsp;<span class="block__bracket">+</span>&nbsp;<span class="block__teg">p</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">Родственный селектор <span class="block__span">~</span></p>
+        <div class="block__task">
+            <h1 class="block__header">28. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> идущие после <span class="block__span">h1</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">h1</span>&nbsp;<span class="block__bracket">~</span>&nbsp;<span class="block__teg">p</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">29. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> идущие после <span class="block__span">h2</span> из элемента с <span class="block__span">id = test</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__bracket">#</span><span class="block__id">test</span>&nbsp;<span class="block__teg">h2</span>&nbsp;<span class="block__bracket">~</span>&nbsp;<span class="block__teg">p</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">Универсальный селектор <span class="block__span">*</span></p>
+        <div class="block__task">
+            <h1 class="block__header">30. Сделайте селектор, который выберет все элементы на странице</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">*</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">31. Сделайте селектор, который выберет все <span class="block__span">i</span>, лежащие внутри любых элементов, лежащих внутри абзаца <span class="block__span">p</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span>&nbsp;<span class="block__teg">*</span>&nbsp;<span class="block__teg">i</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">Селекторы атрибутов</p>
+        <div class="block__task">
+            <h1 class="block__header">32. Сделайте селектор, который выберет все элементы с атрибутом <span class="block__span">title</span></h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">*</span><span class="block__bracket">[</span><span class="block__atr-out">title</span><span class="block__bracket">]</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">33. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с атрибутом <span class="block__span">title</span></h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span><span class="block__bracket">[</span><span class="block__atr-out">title</span><span class="block__bracket">]</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">34. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с атрибутом <span class="block__span">title</span>, который равен <span class="block__span">"привет"</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span><span class="block__bracket">[</span><span class="block__atr-out">title</span><span class="block__bracket">=</span><span class="block__bracket">"</span><span class="block__text">привет</span><span class="block__bracket">"</span><span class="block__bracket">]</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">35. Сделайте селектор, который выберет все ссылки <span class="block__span">a</span> с атрибутом <span class="block__span">href</span>, значение которого начинается на <span class="block__span">"http://"</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">a</span><span class="block__bracket">[</span><span class="block__atr-out">href</span><span class="block__bracket">^</span><span class="block__bracket">=</span><span class="block__bracket">"</span><span class="block__text">http://</span><span class="block__bracket">"</span><span class="block__bracket">]</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">36. Сделайте селектор, который выберет все ссылки <span class="block__span">a</span> с атрибутом <span class="block__span">href</span>, значение которого заканчивается на <span class="block__span">".html"</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">a</span><span class="block__bracket">[</span><span class="block__atr-out">href</span><span class="block__bracket">$</span><span class="block__bracket">=</span><span class="block__bracket">"</span><span class="block__text">.html</span><span class="block__bracket">"</span><span class="block__bracket">]</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">37. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с атрибутом <span class="block__span">title</span>, в значении которого есть слово <span class="block__span">"привет"</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span><span class="block__bracket">[</span><span class="block__atr-out">title</span><span class="block__bracket">*</span><span class="block__bracket">=</span><span class="block__bracket">"</span><span class="block__text">привет</span><span class="block__bracket">"</span><span class="block__bracket">]</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">38. Сделайте селектор, который выберет все абзацы <span class="block__span">p</span> с классом, который начинается на <span class="block__span">"top-"</span>.</h1>
+            <div class="block__point">
+                <code>
+                    <span class="block__teg">p</span><span class="block__bracket">[</span><span class="block__atr-out">class</span><span class="block__bracket">|</span><span class="block__bracket">=</span><span class="block__bracket">"</span><span class="block__text">top</span><span class="block__bracket">"</span><span class="block__bracket">]</span>&nbsp;<span class="block__bracket">{</span>
+                    <span class="block__atr">color:</span> <span class="block__property">red</span>;
+                <span class="block__bracket">}</span>
+                </code>
+            </div>
+        </div>
+        <p class="block__par">Практика по селекторам <span class="block__span">*</span></p>
+        <div class="block__task">
+            <h1 class="block__header">39. Повторите страницу по данному по образцу (наведите мышкой на список):</h1>
+            <div class="block__point">
+                <ul class="block__ul39">
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                    <li class="block__li39">пункт li</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">40. Повторите страницу по данному по образцу (наведите мышкой на список):</h1>
+            <div class="block__point">
+                <ul class="block__ul40">
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                    <li class="block__li40">пункт li</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">41. Повторите страницу по данному по образцу (наведите мышкой на список):</h1>
+            <div class="block__point">
+                <ul class="block__ul41">
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                    <li class="block__li41">пункт li</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">42. Повторите страницу по данному по образцу (наведите мышкой на список):</h1>
+            <div class="block__point">
+                <ul class="block__ul42">
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                    <li class="block__li42">пункт li</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">43. Повторите страницу по данному по образцу (наведите мышкой на список):</h1>
+            <div class="block__point">
+                <ul class="block__ul43">
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                    <li class="block__li43">пункт li</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

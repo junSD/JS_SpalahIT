@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task-20</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper__task">
+        <h1 class="wrapper__header">Task 20</h1>
+        <div class="block__task">
+            <h1 class="block__header">1. На input и textarea ( input, textarea и атрибуты resize, placeholder, disabled)</h1>
+            <form class="block__form" action="#" method="get">
+                <div class="block__form__el">
+                    <input type="text" placeholder="Плейсхолдер">
+                </div>
+                <div class="block__form__el">
+                    <input type="text" value="Value">
+                </div>
+                <div class="block__form__el">
+                    <input type="text" placeholder="disebled" disabled="disabled">
+                </div>
+                <div class="block__form__el">
+                    <input type="password" value="12345">
+                </div>
+                <div class="block__form__el">
+                    <textarea name="ta-first" id="ta-first" cols="20" rows="10" placeholder="Input a text"></textarea>
+                </div>
+                <div class="block__form__el">
+                    <input type="submit" value="Кнопка через тег inpput">
+                </div>
+                <div class="block__form__el">
+                    <button>Кнопка через тег button</button>
+                </div>
+            </form>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">2. На input с label (label)</h1>
+            <form class="block__form" action="#" method="get">
+                <div class="block__form__el">
+                    <input id="place_first" type="text" placeholder="Плейсхолдер">
+                    <label for="place_first">Это метка для инпута - нажмите на меня - и инпут получит фокус!</label>
+                </div>
+                <div class="block__form__el">
+                    <input type="submit" value="Отправить на сервер">
+                </div>
+            </form>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">3. На checkbox и radio ( checkbox, radio и атрибуты checked)</h1>
+            <form class="block__form" action="#" method="get">
+                <div class="block__form__el ">
+                    <input id="bl_3-1" type="checkbox">
+                    <label class="bl_3" for="bl_3-1">Это метка для чекбокса: нажмите на меня - чекбокс сменит галочку!</label>
+                </div>
+                <div class="block__form__el ">
+                    <input id="bl_3-2" type="checkbox" checked>
+                    <label class="bl_3" for="bl_3-2">Я отмечен по умолчанию!</label>
+                </div>
+                <div class="block__form__el ">
+                    <input id="bl_3-3" type="checkbox" disabled="disabled">
+                    <label class="bl_3" for="bl_3-3">Я disabled!</label>
+                </div>
+                <div class="block__form-in">
+                    <p class="block__form-in-par">Это группа радиокнопок - только одна из них может быть отмечена!</p>
+                    <div class="block__form__el ">
+                        <input id="bl_3-4" type="radio" name="radio-1">
+                        <label class="bl_3" for="bl_3-4">Это метка для радио</label>
+                    </div>
+                    <div class="block__form__el ">
+                        <input id="bl_3-5" type="radio" name="radio-1">
+                        <label class="bl_3" for="bl_3-5">Это метка для радио</label>
+                    </div>
+                </div>
+                <div class="block__form__el">
+                    <input type="submit" value="Отправить на сервер">
+                </div>
+            </form>
+        </div>
+         <div class="block__task">
+            <h1 class="block__header">4. На select (select)</h1>
+            <form class="block__form" action="#" method="get">
+                <div class="block__form__el ">
+                    <select class="block__select-04" name="list[]" id="sel_1">
+                        <option value="value01">Нью Йорк</option>
+                        <option value="value02">Москва</option>
+                        <option value="value03">Киев</option>
+                        <option value="value04">Варшава</option>
+                        <option value="value05">Минск</option>
+                        <option value="value06">Рига</option>
+                        <option value="value07">Рим</option>
+                    </select>
+                    <select class="block__select-04" name="list[]" id="sel_1" multiple="multiple" size="3">
+                        <option value="value01">Нью Йорк</option>
+                        <option value="value02" selected>Москва</option>
+                        <option value="value03">Киев</option>
+                        <option value="value04">Варшава</option>
+                        <option value="value05">Минск</option>
+                         <option value="value06">Рига</option>
+                        <option value="value07">Рим</option>
+                    </select>
+                    <select class="block__select-04" name="list[]" id="sel_1" multiple="multiple" size="5">
+                        <option value="value01">Нью Йорк</option>
+                        <option value="value02">Москва</option>
+                        <option value="value03" selected>Киев</option>
+                        <option value="value04">Варшава</option>
+                        <option value="value05">Минск</option>
+                         <option value="value06">Рига</option>
+                        <option value="value07">Рим</option>
+                    </select>
+                    <select class="block__select-04" name="list[]" id="sel_1" multiple="multiple" size="7">
+                        <optgroup label="США">
+                            <option value="value01">Нью Йорк</option>
+                        </optgroup>
+                        <optgroup label="Россия">
+                            <option value="value02">Москва</option>
+                        </optgroup>
+                        <optgroup label="Украина">
+                            <option value="value03" selected>Киев</option>
+                        </optgroup>
+                        <optgroup label="Беларусь">
+                            <option value="value05">Минск</option>
+                        </optgroup>
+                        <optgroup label="Италия">
+                            <option value="value07">Рим</option>
+                        </optgroup>
+                        <optgroup label="Литва">
+                            <option value="value06">Рига</option>
+                        </optgroup>
+                        <optgroup label="Польша">
+                            <option value="value04">Варшава</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" value="Отправить на сервер">
+                </div>
+            </form>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">5. На file (input type="file")</h1>
+            <form class="block__form" action="#" method="get">
+                <div class="block__form__el">
+                    <input type="file" value="Выберите файл">
+                    <input type="submit" value="Отправить на сервер">
+                </div>
+            </form>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">6. На fieldset и legend (fieldset, legend)</h1>
+            <form class="block__form" action="#" method="get">
+                <div class="block__form__el06">
+                    <fieldset class="block__fieldset06">
+                        <legend class="block__legend06">
+                            Выберите кнопочку
+                        </legend>
+                        <input class="block__radio06-1" type="radio" name="radio06-1">
+                        <input class="block__radio06-1" type="radio" name="radio06-1">
+                        <input class="block__radio06-1" type="radio" name="radio06-1">
+                        <input class="block__inp06" type="text" placeholder="Ваше имя...">
+                    </fieldset>
+                </div>
+                <div class="block__form__el06">
+                    <fieldset class="block__fieldset06">
+                        <legend class="block__legend06">
+                            Выберите еще кнопочку
+                        </legend>
+                        <input class="block__radio06-1" type="radio" name="radio06-2">
+                        <input class="block__radio06-1" type="radio" name="radio06-2">
+                        <input class="block__radio06-1" type="radio" name="radio06-2">
+                        <input class="block__radio06-1" type="radio" name="radio06-2" disabled="disabled">
+                        <input class="block__radio06-1" type="radio" name="radio06-2" disabled="disabled">
+                    </fieldset>
+                </div>
+                <div class="block__form__el">
+                    <input type="submit" value="Отправить на сервер">
+                </div>
+            </form>
+        </div>
+        <div class="block__task">
+            <h1 class="block__header">7. На resize (resize)</h1>
+            <form class="block__form" action="#" method="get">
+                <div class="block__form__el06">
+                    <textarea class="block_textar-071" name="text-ar07" id="text-ar07" placeholder="Ограничена ширина и высота"></textarea>
+                </div>
+                <div class="block__form__el06">
+                    <textarea class="block_textar-072" name="text-ar07" id="text-ar07"></textarea>
+                </div>
+                <div class="block__form__el06">
+                    <textarea class="block_textar-073" name="text-ar07" id="text-ar07"></textarea>
+                </div>
+                <div class="block__form__el06">
+                    <textarea class="block_textar-074" name="text-ar07" id="text-ar07"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

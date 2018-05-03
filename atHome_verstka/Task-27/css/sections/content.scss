@@ -1,0 +1,368 @@
+.main {
+    padding: 20px 10px;
+    background-color: rgb(238,232,170);
+}
+.main__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.section {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(245,245,220);
+    padding: 0 20px 20px 20px;
+}
+.section__list {
+    counter-reset: list;
+}
+.section__item {
+    margin-bottom: 10px;
+    &:before {
+        font-weight: bold;
+        counter-increment: list;
+        content: counter(list) ". ";
+    }
+}
+.section__desc {
+    display: inline-block;
+    text-align: left;
+    padding: 5px 0;
+}
+.section__content {
+    overflow-x: hidden;
+    width: 100%;
+    border: 2px dotted #ccc;
+    padding: 50px;
+}
+
+// ================task__1=================
+
+// @include keyframes(anim1) {
+//   0%  { margin-left: 10px; }
+//  100% { margin-left: 600px;; }
+// }
+
+.section__block1-1 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform: rotate(45deg);
+    }
+}
+.section__block1-2 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform: scale(2, 3);
+    }
+}
+.section__block1-3 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform: skewX(45deg);
+    }
+}
+.section__block1-4 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform: translateX(20px);
+    }
+}
+.section__block1-5 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform: translate(-20px, -20px);
+    }
+}
+
+// ================task__2=================
+
+.section__block2-1 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform-origin: bottom right;
+        transform: rotate(45deg);
+    }
+}
+.section__block2-2 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform-origin: bottom left;
+        transform: rotate(45deg);
+    }
+}
+.section__block2-3 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform-origin: center center;
+        transform: rotate(45deg);
+    }
+}
+.section__block2-4 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform-origin: top right;
+        transform: rotate(-45deg);
+    }
+}
+.section__block2-5 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform-origin: bottom right;
+        transform: scale(2);
+    }
+}
+.section__block2-6 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        transform-origin: bottom center;
+        transform: skewX(45deg);
+    }
+}
+// ================task__3=================
+// @include keyframes(anim2) {
+//   0%  { background-color: rgba(255, 255 , 255, 1);}
+//   50% { background-color: rgba(255, 0 , 0, 0.5);}
+//  100% { background-color: rgba(255, 0 , 0, 1); }
+// }
+.section__block3 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background: white;
+    margin-bottom: 20px;
+    &:hover {
+        border-radius: 100%;
+        transform:rotate(45deg) scaleY(2);
+    }
+}
+
+// ================task__4=================
+.section__block4 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    p {
+            transform: skewX(10deg);
+        }
+}
+
+// ================task__5=================
+.section__block5 {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px 0 rgba(#000,.8),
+    0 -1px 3px 0 rgba(#000,.8);
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover {
+        img {
+            transform: scale(2);
+        }
+    }
+}
+// ================task__9=================
+
+.section__block9 {
+    width: 80%;
+    margin: 0 auto;
+}
+.block9-item {
+    display: inline-block;
+    border: 1px solid blue;
+    &:nth-child(2) {
+        transform: rotate(20deg) scale(1.2);
+    }
+    &:hover {
+        transform: rotate(20deg) scale(1.2);
+    }
+}
+.block9-link {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: blue;
+    background-color: #fff;
+}
+
+
+// ================task__10=================
+
+.section__block10 {
+    width: 80%;
+    margin: 0 auto;
+}
+.block10-item {
+    display: inline-block;
+    border: 1px solid blue;
+    transition: transform 1.5s;
+    &:hover {
+        transform: rotate(380deg) scale(1.1);
+    }
+}
+.block10-link {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: blue;
+    background-color: #fff;
+}
+
+// ================task__11=================
+
+.section__block11 {
+    padding: 50px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.block11-list {
+    transform: skewY(-10deg);
+}
+.block11-item {
+    display: inline-block;
+    border: 1px solid blue;
+    transition: transform 1.5s;
+    &:hover {
+        transform: rotate(380deg) scale(1.1);
+    }
+}
+.block11-link {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: blue;
+    background-color: #fff;
+}
+
+// ================task__12=================
+@include keyframes(anim13) {
+    0% {transform: rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+@include keyframes(anim14) {
+    0% {background-color: #f00;}
+    25% {background-color: #ff0;}
+    50% {background-color: #fff;}
+    0% {background-color: #ff0;}
+    100% {background-color: #f00;}
+}
+.section__content-height {
+    height: 400px;
+}
+.section__block12 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    margin: 50px auto;
+    border: 1px solid red;
+    background: white;
+    @include animation("anim13 10s linear infinite")
+}
+.section__block12-boll {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    border: 1px solid red;
+    top: -40px;
+    left: -40px;
+    @include animation("anim14 10s linear infinite");
+}
+
+// ================task__13=================
+
+@include keyframes(anim15) {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+        top: 50%;
+        left: 50%;
+    }
+    100% {
+        top: 440px;
+        left: 440px;
+        transform:rotate(0deg);
+    }
+}
+.section__block13 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 20px auto;
+    border: 1px solid red;
+    background: white;
+}
+.section__block13-elem {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: red;
+    border: 1px solid red;
+    transform: rotate(-1800deg);
+    @include animation("anim15 4s linear 10 forwards");
+}

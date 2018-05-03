@@ -1,0 +1,30 @@
+.banner {
+    background: url(../img/banner-wrapper-bg.png) repeat;
+    padding: 32px 0;
+    height: 278px;
+}
+.banner__wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+.banner__content {
+    background: url(../img/banner-image.jpg);
+    height: 278px;
+    background-size: cover;
+    text-align: center;
+    border-radius: 9px;
+    position: relative;
+}
+.banner__content-text {
+    width: 100%;
+    padding: 12px 0;
+    background: url(../img/banner-caption-bg.png) no-repeat left bottom;
+    border-radius: 0 0 8px 8px;
+    font-weight: normal;
+    font-family: 'Cookie', cursive;
+    font-size: 35px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
